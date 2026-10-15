@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/booksFragment">
+
+    <fragment android:id="@+id/booksFragment" android:name="com.example.bookclub.ui.BooksFragment" android:label="Книги" />
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.example.bookclub.ui.AddBookFragment"
+        android:label="Добавить">
+        <argument
+            android:name="bookId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.example.bookclub.ui.BookDetailFragment"
+        android:label="Детали">
+        <argument
+            android:name="bookId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment android:id="@+id/statisticsFragment" android:name="com.example.bookclub.ui.StatisticsFragment" android:label="Статистика" />
+    <fragment android:id="@+id/settingsFragment" android:name="com.example.bookclub.ui.SettingsFragment" android:label="Настройки" />
+</navigation>

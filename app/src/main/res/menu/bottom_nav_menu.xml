@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/booksFragment" android:title="Книги" android:icon="@drawable/ic_book"/>
+    <item android:id="@+id/addBookFragment" android:title="Добавить" android:icon="@drawable/ic_add"/>
+    <item android:id="@+id/bookDetailFragment" android:title="Детали" android:icon="@drawable/ic_info"/>
+    <item android:id="@+id/statisticsFragment" android:title="Статистика" android:icon="@drawable/ic_chart"/>
+    <item android:id="@+id/settingsFragment" android:title="Настройки" android:icon="@drawable/ic_settings"/>
+</menu>
